@@ -4,10 +4,6 @@ int main() {
     int p;
     scanf("%d", &p);
 
-    if (p <= 1) {
-        printf("not a prime\n", p);
-        return 0;
-    }
     int r = 2;
     int pras = 1;
     while (r * r <= p) {
@@ -16,6 +12,10 @@ int main() {
             break;
         }
         r++;
+    }
+    if (p <= 1) {
+        printf("not a prime\n", p);
+        return 0;
     }
     if (pras) {
         printf("prime\n", p);
