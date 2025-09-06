@@ -2,10 +2,12 @@
 
 int main() {
     int p; 
-    scanf("%d", &p);   
+    scanf("%d", &p);
+
     int pras = 1;
     int r = p;
-    if (p == 0 && p == 1) {
+
+    if (p == 0 || p == 1) {
         pras = 1;
     } else {
         do {
