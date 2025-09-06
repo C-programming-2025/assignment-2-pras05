@@ -1,26 +1,30 @@
 #include <stdio.h>
 
 int main() {
-    int p;
-    scanf("%d", &p);
+    int n;
+    printf("Enter a positive integer: ");
+    scanf("%d", &n);
 
-    int r = 2;
-    int pras = 1;
-    while (r * r <= p) {
-        if (p % r == 0) {
+    if (n <= 1) {
+        printf("%d is not prime\n", n);
+        return 0;
+    }
+
+    int i = 2;
+    int pras = 1; 
+    while (i * i <= n) {
+        if (n % i == 0) {
             pras = 0;
             break;
         }
-        r++;
+        i++;
     }
-    if (p <= 1) {
-        printf("not a prime\n", p);
-        return 0;
-    }
+
     if (pras) {
-        printf("prime\n", p);
+        printf("%d is prime\n", n);
     } else {
-        printf("not a prime\n", p);
+        printf("%d is not prime\n", n);
     }
+
     return 0;
 }
