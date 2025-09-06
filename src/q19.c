@@ -1,5 +1,18 @@
-/* Write a C program that prompts the user for a positive integer and prints a pattern of asterisks (*) in a square shape using nested loops.
-Example: User’s Input = 2, then pattern to print will be:
-    * *
-    * *
-*/
+#include <stdio.h>
+
+int main() {
+    int p;
+    scanf("%d", &p);
+    int x, y;
+
+    for (int x = 0; x < p; x++) {
+        for (int y = 0; y < p; y++) {
+            printf("*");
+            if (y < p - 1) {
+                printf(" ");
+            }
+        }
+        printf("\n");
+    }
+    return 0;
+}

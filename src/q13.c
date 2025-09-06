@@ -1,1 +1,12 @@
-// Write a C program that calculates the sum of all even numbers from 1 to 50 using a while loop.
+#include <stdio.h>
+
+int main() {
+    int p = 2;
+    int pras = 0;
+    while (p <= 50) {
+        pras += p;
+        p += 2;
+    }
+    printf("%d\n", pras);
+    return 0;
+}

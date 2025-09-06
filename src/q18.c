@@ -1,2 +1,14 @@
-// Write a C program that prompts the user for a positive integer and prints the
-// multiplication table for that number up to 10 using a while loop.
+#include <stdio.h>
+
+int main() {
+    int p;
+    scanf("%d", &p);
+
+    int r = 1;
+    while (r <= 10) {
+        printf("%d ", p * r);
+        r++;
+    }
+
+    return 0;
+}
